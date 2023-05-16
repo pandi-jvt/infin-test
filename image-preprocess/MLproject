@@ -1,0 +1,8 @@
+name: image-preprocessing
+
+docker_env:
+  image:  preprocessing-image
+
+entry_points:
+  main:
+    command: "python xformcode.py"
