@@ -27,10 +27,10 @@ for ff in model_files:
     elif 'class_dict' in ff:
         class_labels_df = pd.read_csv(ff)
         
-#class_labels_dict = {row['class']: row['class_index'] for i, row in class_labels_df.iterrows()}
-
-
-#print(class_labels_dict['CROW'], class_labels_dict['BLUE HERON'], class_labels_dict['PINK ROBIN'])
+class_labels_dict = {row['class']: row['class_index'] for i, row in class_labels_df.iterrows()}
+print('Environment## 333333333333333333333')
+print(class_labels_dict)
+print(class_labels_dict['CROW'], class_labels_dict['BLUE HERON'], class_labels_dict['PINK ROBIN'])
 
 
 #Preprocess images
