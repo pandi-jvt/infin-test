@@ -16,6 +16,8 @@ model_df = concurrent_core.list('/Users/jitendra/Kaggle/data/Bird-Species/bird_s
 
 print('Environment## 2' , os.environ)
 model_files = concurrent_core.get_local_paths(model_df)
+print('Environment## 222222222222222222222222222')
+print(model_files)
 
 print('Environment## 3' , os.environ)
 for ff in model_files:
@@ -25,10 +27,10 @@ for ff in model_files:
     elif 'class_dict' in ff:
         class_labels_df = pd.read_csv(ff)
         
-class_labels_dict = {row['class']: row['class_index'] for i, row in class_labels_df.iterrows()}
+#class_labels_dict = {row['class']: row['class_index'] for i, row in class_labels_df.iterrows()}
 
 
-print(class_labels_dict['CROW'], class_labels_dict['BLUE HERON'], class_labels_dict['PINK ROBIN'])
+#print(class_labels_dict['CROW'], class_labels_dict['BLUE HERON'], class_labels_dict['PINK ROBIN'])
 
 
 #Preprocess images
